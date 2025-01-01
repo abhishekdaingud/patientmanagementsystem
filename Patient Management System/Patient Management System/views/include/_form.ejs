@@ -1,0 +1,57 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Enter Patient Name">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Email</label>
+            <input type="text" name="email" value="" placeholder="Enter Patient Email-Id">
+        </div>
+        <div class="form-group">
+            <label for="disease" class="text-light">Disease</label>
+            <input type="text" name="disease" value="" placeholder="Enter Patient disease">
+        </div>
+        <div class="form-group">
+            <div class="row" style="display:flex; justify-content: space-between;">
+                <div class="col-6">
+                    <label for="date" class="text-light">Admitted Date</label>
+                    <input type="date" min="1997-01-01" max="2030-12-31" style="padding: 3px;" name="date" value="" placeholder="Enter Patient Admitted date">
+                </div>
+                <div class="col-6" style="padding-right: 35%;">
+                    <label for="date1" min="1997-01-01" max="2030-12-31" class="text-light">Discharge Date</label>
+                    <input type="date" style="padding: 3px;" name="date1" value="" placeholder="Enter Patient Discharge date">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Gender</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="Male" >
+                <label for="radio-2" class="radio-label">Male</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Female" >
+                <label for="radio-3" class="radio-label">Female</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Admitted" >
+                <label for="radio-4" class="radio-label">Admitted</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Discharge" >
+                <label for="radio-5" class="radio-label">Discharge</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update"><Address>Add</Address></button>
+        </div>
+    </div>
+</form>
